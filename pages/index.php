@@ -12,12 +12,19 @@ include '../inc/parts/header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blaseek.com | Home</title>
+    <link rel="icon" type="image/png" href="../inc/logos/favicon.png">
+
+    <style>
+        body {
+            background-color: #E3E3E3;
+        }
+    </style>
 </head>
 
 
 
 <body>
-    <h1>welcome to blaseek.com</h1>
+    <h1>home</h1>
 </body>
 
 </html>

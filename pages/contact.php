@@ -12,6 +12,7 @@ include '../inc/parts/header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blaseek.com | Contact us</title>
+    <link rel="icon" type="image/png" href="../inc/logos/favicon.png">
 </head>
 
 <body>
