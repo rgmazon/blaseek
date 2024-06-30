@@ -1,45 +1,148 @@
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+
+include '../inc/parts/head.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop-up Sticky Div with Shadow</title>
-
+    <title>Blaseek.com | Home</title>
+    <link rel="icon" type="image/png" href="../inc/logos/favicon.png">
 
     <style>
-        .popup-container {
-            position: sticky;
-            top: 20px;
-            /* Adjust as needed */
-            z-index: 1000;
-            /* Ensure the popup appears above other content */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background: #0f0c34;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        .popup-content {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            /* Shadow effect */
+        .container {
+            display: flex;
+            /* Flexbox for layout */
+            flex: 1;
         }
 
-        .main-content {
-            margin-top: 200px;
-            /* To create space for the sticky popup */
+        .content {
+            padding-top: 100px;
+            flex: 1;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .explore {
+            background: #ff5722;
+        }
+
+        /* Accent color for buttons */
+        .learn {
+            background: #03a9f4;
+        }
+
+        /* Another accent color */
+
+        .graphics {
+            position: relative;
+            flex: 1;
+            /* background: linear-gradient(to bottom right, #673ab7, #e91e63); */
+            /* Gradient */
+            display: flex;
+            justify-content: center;
+            /* Horizontally center */
+            align-items: center;
+            /* Vertically center */
+        }
+
+        .image1 {
+
+            height: 600px;
+        }
+
+
+
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+
+            /* Tablet and smaller screens */
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Stack elements vertically */
+            }
+
+            .content {
+                padding: 20px;
+                /* Reduce padding */
+            }
+
+            .content h1 {
+                font-size: 2em;
+                /* Smaller heading */
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            /* Mobile phones */
+            .content {
+                text-align: center;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .buttons button {
+                margin: 5px;
+                /* Reduce button margins */
+            }
+
+            .image1 {
+                width: 50%;
+                height: 50%;
+                display: none;
+            }
         }
     </style>
 </head>
 
+
+
 <body>
-    <div class="popup-container">
-        <div class="popup-content">
-            <p>This is a pop-up div with a sticky position and shadow effect.</p>
+    <div class="container">
+        <div class="content">
+            <h1>Blaseek Recruitment</h1>
+            <p>A clean and intuitive navbar that seamlessly adapts to any device, keeping your website navigation accessible and user-friendly.</p>
+            <div class="buttons">
+                <button class="explore">Explore Now</button>
+                <button class="learn">Learn More</button>
+            </div>
         </div>
-    </div>
-    <div class="main-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec semper libero. Phasellus nec nisi non lorem blandit feugiat. Integer a metus et elit volutpat tincidunt. Suspendisse potenti. Sed vehicula lacinia eros, eget fermentum eros accumsan sit amet. Mauris tristique est nec purus blandit, vitae varius turpis pharetra. Morbi venenatis congue eros eget feugiat. Donec sagittis, eros nec cursus laoreet, ex ligula hendrerit tortor, sed cursus sem quam nec ex. Vivamus pharetra mi sit amet metus scelerisque, vel dictum libero tempor. Nullam feugiat augue non est fermentum varius. Sed finibus justo sed elit accumsan, nec dignissim odio fermentum. In lacinia orci id velit eleifend posuere.</p>
-        <!-- More content here -->
+
+        <div class="graphics">
+            <img src="../images/image1.jpg" alt="image" class="image1">
+        </div>
     </div>
 </body>
 
