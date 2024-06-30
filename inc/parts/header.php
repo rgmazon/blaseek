@@ -23,19 +23,9 @@
         .navbar {
             position: sticky;
             z-index: 1000;
-            background-color: #ffffff;
+            background-color: #1c1347;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
             /* Ensure the popup appears above other content */
-        }
-
-
-
-        .theme-bg {
-            background-color: #000470;
-        }
-
-        .theme-font {
-            color: red;
         }
 
         .custom-toggler {
@@ -71,13 +61,14 @@
         /* Customize the toggler button */
         .navbar-toggler {
             border-color: #e6e6e6;
-            background-color: white;
+            background-color: pink;
             color: #ffffff;
         }
 
         /* Change background color on hover */
         .navbar-toggler:hover {
-            background-color: #F0F0F0;
+            /* background-color: #F0F0F0; */
+            background-color: pink;
         }
 
         .btn-custom {
@@ -96,7 +87,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #1c1347;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img src="..\inc\logos\blaseeklogo.jpg" style="height: 40px; width: 110px" alt="blaseek logo">

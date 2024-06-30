@@ -1,7 +1,7 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
 
-include '../inc/parts/header.php';
+include '../inc/parts/head.php';
 ?>
 
 
